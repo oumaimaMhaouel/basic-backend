@@ -1,0 +1,12 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://C:/workDeep/backend/configuration
+          default-label: master
+          clone-on-start: false
