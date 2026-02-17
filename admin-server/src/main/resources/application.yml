@@ -3,6 +3,7 @@ spring:
     name: admin-server
   config:
     import: optional:configserver:http://localhost:8000
+
 server:
   port: 9000
 

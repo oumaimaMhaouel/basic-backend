@@ -7,6 +7,11 @@ spring:
     config:
       server:
         git:
-          uri: file://C:/workDeep/backend/configuration
-          default-label: master
+          uri: file://C:/workDeepMCP/configuration
+          default-label: main
           clone-on-start: false
+          search-paths: ${spring.profiles.active}
+    security:
+      user:
+        name: ${CONFIG_SERVER_USERNAME:oumaima}
+        password: ${CONFIG_SERVER_PASSWORD:oumaima}

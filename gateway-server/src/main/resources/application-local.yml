@@ -1,0 +1,6 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8000
+    uri: http://localhost:8000
+    username: ${CONFIG_SERVER_USERNAME:oumaima}
+    password: ${CONFIG_SERVER_PASSWORD:oumaima}
